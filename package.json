@@ -1,5 +1,5 @@
 {
-  "name": "goit-node-js",
+  "name": "goit-node",
   "version": "1.0.0",
   "description": "goit-node-js",
   "type": "module",
@@ -11,6 +11,7 @@
     "count": "node src/scripts/countContacts.js",
     "remove-last": "node src/scripts/removeLastContact.js",
     "remove-all": "node src/scripts/removeAllContacts.js"
+    
   },
   "keywords": [],
   "author": "",
