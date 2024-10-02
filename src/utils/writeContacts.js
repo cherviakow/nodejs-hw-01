@@ -5,13 +5,14 @@ import fs from 'node:fs/promises';
 
 export const writeContacts = async (updatedContacts) => {
 
+
     try{
-        const writeText = updatedContacts;
-        await fs.writeFile(PATH_DB, writeText);
+        const data = JSON.stringify(updatedContacts, null, 2);
+        await fs.writeFile(PATH_DB, data, 'utf-8');
     } catch(error){
         console.log(error);
     }
 
     }
 
-console.log(writeContacts('Text'));
+// console.log(writeContacts());
